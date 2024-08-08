@@ -1,0 +1,36 @@
+version: "3.1"
+stories:
+- story: Test Salam dan Biografi
+  steps:
+  - intent: greet
+    action: utter_greet
+  - intent: ask_biography
+    action: utter_biography
+
+- story: Test Tanya Hobi
+  steps:
+  - intent: ask_hobbies
+    action: utter_hobbies
+
+- story: Test Tanya Pendidikan
+  steps:
+  - intent: ask_education
+    action: utter_education
+
+- story: Test Tanya Cita-cita
+  steps:
+  - intent: ask_career
+    action: utter_career
+
+- story: Test Ucapkan Selamat Tinggal
+  steps:
+  - intent: goodbye
+    action: utter_goodbye
+
+- story: Test Greet dan Tanya Biografi
+  steps:
+  - intent: greet
+    action: utter_greet
+  - intent: ask_biography
+    action: utter_biography
+    # Ensure the response about biography is correct

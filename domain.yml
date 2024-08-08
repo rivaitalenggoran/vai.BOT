@@ -1,0 +1,164 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_about_bot
+  - ask_biography
+  - ask_education
+  - ask_family
+  - ask_family_parent
+  - ask_family_sib
+  - ask_favorite_color
+  - ask_favorite_food
+  - ask_favorite_drink
+  - ask_hobbies
+  - ask_favorite_song
+  - ask_favorite_book
+  - ask_favorite_game
+  - ask_job
+  - ask_career
+  - ask_achivement
+  - ask_daily_routine
+  - ask_personality
+  - ask_relationship
+  - out_of_scope
+
+
+
+entities:
+  - name
+
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: name
+
+
+
+
+responses:
+#greetings dan goodbye-------------------------------------------------------------------------------------------
+  utter_greet:
+    - text: "Hai! Ada yang bisa saya bantu hari ini?"
+    - text: "Halo! Bagaimana kabar Anda?"
+    - text: "Halo! Salam kenal!"
+    - text: "Hai, terima kasih karna telah menggunakan vai.Bot!"
+
+  utter_goodbye:
+    - text: "Selamat tinggal! Semoga hari Anda menyenangkan."
+    - text: "Baik, terima kasih telah mencoba vai.Bot!"
+#----------------------------------------------------------------------------------------------------------------
+
+
+
+#ask about bot--------------------------------------------------------------------------------------------------
+  utter_about_bot:
+    - text: "Saya adalah bot yang dibuat oleh Rivai!, salam kenal boskuhh!"
+    - text: "Bot yang dibuat oleh Rivai Hayashi Hendrik Talenggoran"
+#---------------------------------------------------------------------------------------------------------------
+
+
+
+#biography(biography,education)-----------------------------------------------------------------------------------
+  utter_biography:
+    - text: "Nama : Rivai Hayashi Hendrik Talenggoran
+             Tempat/Tanggal Lahir : Mangaran,9 Maret 2002. 
+             Pendidikan : Universitas Kristen Duta Wacana."
+    - text: "Rivai Hayashi Hendrik Talenggoran, Lahir di Mangaran, 9 Maret 2002. 
+             Dia menempuh pendidikan di Universitas Kristen Duta Wacana"
+    - text: "Ini merupakan biografi tuanku : 
+             Nama : Rivai Hayashi Hendrik Talenggoran
+             Tempat/Tanggal Lahir : Mangaran,9 Maret 2002. 
+             Pendidikan : Universitas Kristen Duta Wacana."
+    - text: "Rivai Hayashi Hendrik Talenggoran, Lahir di Mangaran, 9 Maret 2002. Dia menempuh pendidikan di Universitas Kristen"
+
+  utter_education:
+    - text: "Rivai kuliah di Universitas Kristen Duta Wacana."
+    - text: "Rivai sekarang berkuliah di Universitas Kristen Duta Wacana."
+    - text: "Universitas Kristen Duta Wacana menjadi tempat pendidikan Rivai Sekarang."
+    - text: "Tuanku sekarang bersekolah di Universitas Kristen Duta Wacana"
+
+  utter_family:
+    - text: "Ayah : Kader Talenggoran, Ibu : Nelce Elungan, Adik : Baret dan Damai Talenggoran "
+
+  utter_family_parent:
+    - text: "Ayah Rivai namanya Kader Talenggoran, sedangkan ibu Rivai namanya Nelce Elungan"
+    - text: "Ayah Rivai : Kader Talenggoran, Ibu Rivai : Nelce Elungan"
+
+  utter_family_sib :
+    - text: "Rivai punya 2 saudara kandung, semuanya laki-laki"
+    - text: "Rivai punya 2 adik kandung"
+    - text: "Rivai memiliki 2 adik kandung"
+    - text: "Adik kandung Rivai ada 2"
+    - text: "Rivai menjadi kakak dari 2 adik kandung"
+
+#----------------------------------------------------------------------------------------------------------------
+
+
+
+#continued biography(favorite color,hobbies,career,relationship)-------------------------------------------------
+  utter_favorite_color:
+    - text: "Warna kesukaan Rivai : Hitam, Putih."
+    - text: "Rivai suka Warna Hitam dan Putih."
+    - text: "Warna kesukaannya ada warna Hitam dan Putih"
+    - text: "Warna kesukaan tuanku adalah Hitam dan Putih"
+
+  utter_favorite_food:
+    - text: "Makanan favorit Rivai adalah Opor Ayam, Cumi hitam, Ikan Goreng Saus Santan, dan Coklat"
+
+  utter_favorite_drink:
+    - text: "Rivai punya minuman favorit seperti just Alpukat, dan minuman Coklat apapun"
+
+  utter_hobbies:
+    - text: "Hobi Rivai termasuk main game, mendengarkan musik, dan koding."
+    - text: "Hobinya main game,ngoding,dan dengerin musik."
+    - text: "3 hobinya: main game, coding, mendengarkan musik."
+    - text: "Tuanku punya 3 hobi yaitu coding, main game, dan suka putar musik"
+
+  utter_favorite_song:
+    - text: "Lagu kesukaan Rivai: Feel it - D4vd, Sunflower - Post MaLone, Circle - Post Malone, Where Are Our Blue Is - Tatsuya Kitani, SCAR - Weird Genius"
+
+  utter_favorite_book:
+    - text: "Buku favorit Rivai adalah You do You dari Fellexandro Ruby"
+
+  utter_favorite_game:
+    - text: "Rivai hobi main game GTA, Call of Duty dan Battlefield Series"
+
+  utter_job:
+    - text: "Rivai sekarang berstatus mahasiswa yang belum punya pekerjaan"
+    - text: "Rivai belum memiliki perkejaan sekarang"
+    - text: "Rivai belum bekerja"
+    - text: "Rivai tidak punya pekerjaan"
+
+  utter_career:
+    - text: "Cita-cita Rivai adalah ingin menjadi pebisnis."
+    - text: "Cita-citanya ingin menjadi pebisnis."
+    - text: "Tuanku mempunyai ambisi untuk menjadi pebisnis handal"
+
+  utter_achivement:
+    - text : "Rivai punya prestasi Juara 3 olimpiade FLS2N tingkat provinsi Sulut tahun 2018"
+
+
+  utter_daily_routine:
+    - text: " Kegiatan harian Rivai adalah main game,mendengarkan musik,baca buku,nonton film, dan coding"
+
+  utter_personality:
+    - text: "Rivai punya kepribadian Kalem, Berwibawa(disaat tertentu hehe)"
+
+  utter_relationship:
+    - text: "Rivai fokus sekolah dulu ya bosku!"
+    - text: "Rivai sedang fokus sekolah"
+    - text: "Tuanku ini lagi fokus sekolah yagesya!!!"
+#----------------------------------------------------------------------------------------------------------------
+
+#Error Handling--------------------------------------------------------------------------------------------------
+  utter_out_of_scope:
+    - text: "Maaf, saya tidak mengerti pertanyaan Anda. Bisakah Anda mengulangi?"
+
+
+

@@ -1,0 +1,36 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_career\"}}]": "utter_career",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_career\"}}, {\"prev_action\": {\"action_name\": \"utter_career\"}, \"user\": {\"intent\": \"ask_career\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_about_bot\"}}]": "utter_about_bot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_about_bot\"}}, {\"prev_action\": {\"action_name\": \"utter_about_bot\"}, \"user\": {\"intent\": \"ask_about_bot\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_favorite_color\"}}]": "utter_favorite_color",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_favorite_color\"}}, {\"prev_action\": {\"action_name\": \"utter_favorite_color\"}, \"user\": {\"intent\": \"ask_favorite_color\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_biography\"}}]": "utter_biography",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_biography\"}}, {\"prev_action\": {\"action_name\": \"utter_biography\"}, \"user\": {\"intent\": \"ask_biography\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_family_parent\"}}]": "utter_family_parent",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_family_parent\"}}, {\"prev_action\": {\"action_name\": \"utter_family_parent\"}, \"user\": {\"intent\": \"ask_family_parent\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_education\"}}]": "utter_education",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_education\"}}, {\"prev_action\": {\"action_name\": \"utter_education\"}, \"user\": {\"intent\": \"ask_education\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_relationship\"}}]": "utter_relationship",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_relationship\"}}, {\"prev_action\": {\"action_name\": \"utter_relationship\"}, \"user\": {\"intent\": \"ask_relationship\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_family_sib\"}}]": "utter_family_sib",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_family_sib\"}}, {\"prev_action\": {\"action_name\": \"utter_family_sib\"}, \"user\": {\"intent\": \"ask_family_sib\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_hobbies\"}}]": "utter_hobbies",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_hobbies\"}}, {\"prev_action\": {\"action_name\": \"utter_hobbies\"}, \"user\": {\"intent\": \"ask_hobbies\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

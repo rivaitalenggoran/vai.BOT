@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-birth_date",
+      "2": "I-birth_date",
+      "3": "L-birth_date",
+      "4": "U-birth_date",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-birth_date": 1,
+      "I-birth_date": 2,
+      "L-birth_date": 3,
+      "U-birth_date": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

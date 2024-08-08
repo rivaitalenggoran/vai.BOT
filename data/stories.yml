@@ -1,0 +1,132 @@
+version: "3.1"
+
+stories:
+
+#Greetings and Goodbye-------------------------------------------------------------------------------------------
+- story: Test Greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Test Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+#----------------------------------------------------------------------------------------------------------------
+
+
+
+#ask about bot---------------------------------------------------------------------------------------------------
+- story : Test ask about Bot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_bot
+  - action: utter_about_bot
+#-----------------------------------------------------------------------------------------------------------------
+
+
+
+#biography(biography,education)-----------------------------------------------------------------------------------
+- story: Test ask about Biography
+  steps:
+  - intent: ask_biography
+  - action: utter_biography
+
+- story: Test ask about Education
+  steps:
+  - intent: ask_education
+  - action: utter_education
+
+- story: Test ask about Family
+  steps:
+  - intent: ask_family
+  - action: utter_family
+
+- story : Test ask about Family(Parent)
+  steps:
+  - intent: ask_family_parent
+  - action: utter_family_parent
+
+- story : Test ask about Family(Sib)
+  steps:
+  - intent: ask_family_sib
+  - action: utter_family_sib
+#-----------------------------------------------------------------------------------------------------------------
+
+
+
+#continued biography(favorite color,hobbies,career,relationship)--------------------------------------------------
+- story: Test ask about Favorite Color
+  steps:
+  - intent: ask_favorite_color
+  - action: utter_favorite_color
+
+- story: Test ask about favorite Food
+  steps:
+  - intent: ask_favorite_food
+  - action: utter_favorite_food
+
+- story: Test ask about favorite Drink
+  steps:
+  - intent: ask_favorite_drink
+  - action: utter_favorite_drink
+
+- story: Test ask about Hobbies
+  steps:
+  - intent: ask_hobbies
+  - action: utter_hobbies
+
+- story: Test ask about favorite Song
+  steps:
+  - intent: ask_favorite_song
+  - action: utter_favorite_song
+
+- story: Test ask about favorite Book
+  steps:
+  - intent: ask_favorite_book
+  - action: utter_favorite_book
+
+- story: Test ask about favorite Game
+  steps:
+  - intent: ask_favorite_game
+  - action: utter_favorite_game
+
+- story: Test Ask about Job
+  steps:
+  - intent: ask_job
+  - action: utter_job
+
+- story: Test ask about Career
+  steps:
+  - intent: ask_career
+  - action: utter_career
+
+- story: Test ask about Achivement
+  steps:
+  - intent: ask_achivement
+  - action: utter_achivement
+
+- story: Test ask aboout Daily Routine
+  steps:
+  - intent: ask_daily_routine
+  - action: utter_daily_routine
+
+- story: Test ask about Personality
+  steps:
+  - intent: ask_personality
+  - action: utter_personality
+
+- story: Test ask abour Relationship
+  steps:
+  - intent: ask_relationship
+  - action: utter_relationship
+#---------------------------------------------------------------------------------------------------------------
+
+
+
+#Error Handling-------------------------------------------------------------------------------------------------
+- story: Handle out of scope
+  steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope

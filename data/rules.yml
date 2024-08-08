@@ -1,0 +1,133 @@
+version: "3.1"
+
+rules:
+
+#Greetings and Goodbye-------------------------------------------------------------------------------------------
+- rule: Greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+#----------------------------------------------------------------------------------------------------------------
+
+
+
+#ask about bot--------------------------------------------------------------------------------------------------
+- rule : Ask about Bot
+  steps:
+    - intent: ask_about_bot
+    - action: utter_about_bot
+#----------------------------------------------------------------------------------------------------------------
+
+
+
+#biography(biography,education)-----------------------------------------------------------------------------------
+- rule: Ask about Biography
+  steps:
+  - intent: ask_biography
+  - action: utter_biography
+
+- rule: Ask about Education
+  steps:
+  - intent: ask_education
+  - action: utter_education
+
+- rule: Ask about Family
+  steps:
+  - intent: ask_family
+  - action: utter_family
+
+- rule: Ask about Family(Parent)
+  steps:
+  - intent: ask_family_parent
+  - action: utter_family_parent
+
+- rule: Ask about Family(Sib)
+  steps:
+  - intent: ask_family_sib
+  - action: utter_family_sib
+#-----------------------------------------------------------------------------------------------------------------
+
+
+
+#continued biography(favorite color,hobbies,career,relationship)--------------------------------------------------
+- rule: Ask about favorite Color
+  steps:
+  - intent: ask_favorite_color
+  - action: utter_favorite_color
+
+- rule: Ask about favorite Food
+  steps:
+  - intent: ask_favorite_food
+  - action: utter_favorite_food
+
+- rule: Ask about favorite Drink
+  steps:
+  - intent: ask_favorite_drink
+  - action: utter_favorite_drink
+
+- rule: Ask about Hobbies
+  steps:
+  - intent: ask_hobbies
+  - action: utter_hobbies
+
+- rule: Ask about favorite Song
+  steps:
+  - intent: ask_favorite_song
+  - action: utter_favorite_song
+
+- rule: Ask about favorite Book
+  steps:
+  - intent: ask_favorite_book
+  - action: utter_favorite_book
+
+- rule: Ask about favorite Game
+  steps:
+  - intent: ask_favorite_game
+  - action: utter_favorite_game
+
+- rule : Ask about Job
+  steps:
+  - intent: ask_job
+  - action: utter_job
+
+- rule: Ask about Career
+  steps:
+  - intent: ask_career
+  - action: utter_career
+
+- rule: Ask about Achivement
+  steps:
+  - intent: ask_achivement
+  - action: utter_achivement
+
+- rule: Ask aboout Daily Routine
+  steps:
+  - intent: ask_daily_routine
+  - action: utter_daily_routine
+
+- rule: Ask about Personality
+  steps:
+  - intent: ask_personality
+  - action: utter_personality
+
+- rule: Ask about Relationship
+  steps:
+    - intent: ask_relationship
+    - action: utter_relationship
+#----------------------------------------------------------------------------------------------------------------
+
+
+#Error Handling--------------------------------------------------------------------------------------------------
+- rule: Handle out of scope questions
+  steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope
+
+
+
+

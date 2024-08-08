@@ -1,0 +1,271 @@
+version: "3.1"
+nlu:
+
+#greetings dan goodbye-------------------------------------------------------------------------------------------
+- intent: greet
+  examples: |
+    - Hai
+    - Halo
+    - Hallo
+    - Selamat pagi
+    - Selamat siang
+    - Selamat sore
+    - Selamat malam
+    - Syalom
+    - Hallo Bot
+
+- intent: goodbye
+  examples: |
+    - Selamat tinggal
+    - Sampai jumpa
+    - Bye
+    - Semoga hari Anda menyenangkan
+    - Oke dang
+    - Hoho
+    - Sip
+    - Ok siap
+    - Nggieh
+    - Siap
+    - Okelah
+#----------------------------------------------------------------------------------------------------------------
+
+
+
+#ask about bot--------------------------------------------------------------------------------------------------
+- intent : ask_about_bot
+  examples: |
+    - Siapa kamu
+    - Kamu ini siapa
+    - Siapa anda
+    - Anda ini siapa
+    - Sapa ngana
+    - Nga ini sapa
+#----------------------------------------------------------------------------------------------------------------
+
+
+
+#biography(biography,education)-----------------------------------------------------------------------------------
+- intent: ask_biography
+  examples: |
+    - Ceritakan tentang Rivai
+    - Siapa Rivai Hayashi Hendrik Talenggoran?
+    - Apa informasi tentang Rivai Talenggoran?
+    - Berikan detail tentang Rivai Talenggoran
+    - Apa anda kenal Rivai Talenggoran?
+    - Rivai Talenggoran itu siapa?
+    - Siapakah Rivai Talenggoran?
+    - Sapa itu Rivai Talenggoran?
+    - Ngana kenal Rivai Talenggoran?
+    - Nga kenal Rivai Talenggoran?
+    - Siapa Rivai?
+    - Siapakah Rivai?
+    - Jelaskan biografi Rivai
+    - Sebutkan biografi Rivai
+    - Biografi Rivai
+
+- intent: ask_education_all
+  examples: |
+    - Di mana Rivai bersekolah?
+    - Apa latar belakang pendidikan Rivai?
+    - Jelaskan latar belakang pendidikan Rivai
+    - Di mana Rivai belajar?
+    - Rivai Pernah Sekolah dimana?
+    - Sebutkan riwayat sekolah Rivai
+    - Rivai pe sekolah dimana?
+    - Rivai pernah sekolah dimana?
+    - Rivai baskolah dimana?
+    - Dia belajar dimana sekarang
+    - Dia lulusan apa
+    - Dia bersekolah dimana
+    - Latar belakangnya
+    - Riwayat sekolahnya
+
+- intent: ask_family
+  examples: |
+    - Sebutkan keluarga Rivai
+    - Keluarga Rivai
+    - Jelaskan keluarga Rivai
+
+
+- intent: ask_family_Parent
+  examples: |
+    - Siapa nama orang tua Rivai?
+    - Nama orang tua Rivai Siapa
+    - Orang Tua Rivai Siapakah Mereka
+    - Sebutkan orang tua Rivai
+    - Jelaskan orang tua Rivai
+    - Orang tua Rivai siapa
+
+- intent: ask_family_sib
+  examples: |
+    - Apakah Rivai punya saudara kandung?
+    - Berapa saudara kandung Rivai?
+    - Rivai punya saudara kandung?
+    - Rivai punya adik?
+    - Rivai punya kakak?
+    - Adik Rivai siapa?
+    - Kakak Rivai siapa?
+    - Saudara kandung Rivai?
+    - Apakah Rivai punya adik
+    - Apakah Rivai punya kakak
+#----------------------------------------------------------------------------------------------------------------
+
+
+
+#continued biography(favorite color,hobbies,career,relationship)-------------------------------------------------
+- intent: ask_favorite_color
+  examples: |
+    - Apakah warna kesukaan Rivai?
+    - Warna favorit Rivai apa?
+    - Rivai suka warna apa?
+    - Warna apa yang Rivai Sukai?
+    - Rivai menyukai warna apa?
+    - Rivai punya warna favorit?
+    - Warna apa yang biasanya Rivai sukai?
+
+- intent: ask_favorite_food
+  examples: |
+    - Apa makanan kesukaan Rivai?
+    - Rivai punya makanan kesukaan?
+    - Makanan favorit Rivai apa?
+    - Rivai punya makanan favorit?
+    - apa yang menjadi makanan favorit Rivai?
+    - Makanan favorit Rivai
+    - Makanan kesukaan Rivai
+    - Rivai suka makan apa
+
+- intent: ask_favorite_drink
+  examples: |
+    - Apa minumann kesukaan Rivai?
+    - Rivai punya minuman kesukaan?
+    - Minuman favorit Rivai apa?
+    - Rivai punya minuman favorit?
+    - apa yang menjadi minuman favorit Rivai?
+    - Minuman favorit Rivai
+    - Minuman kesukaan Rivai
+    - Rivai suka minum apa
+
+- intent: ask_hobbies
+  examples: |
+    - Apa hobi Rivai?
+    - Apa yang Rivai suka lakukan?
+    - Ceritakan tentang minat Rivai
+    - Rivai pe hobi apa
+    - Rivai suka jba apa
+
+- intent: ask_favorite_song
+  examples: |
+    - Apa lagu kesukaan Rivai?
+    - Rivai punya lagu kesukaan?
+    - Apa lagu favorit Rivai?
+    - Lagu kesukaan Rivai
+    - Rivai punya lagu favorit?
+    - Rivai punya lagu kesukaan?
+    - Lagu favorit Rivai
+    - Rivai suka denger lagu apa?
+    - Apakah lagu kesukaan Rivai?
+    - Apakah lagu Favorit Rivai?
+    
+
+- intent: ask_favorite_book
+  examples: |
+    - Apa buku kesukaan Rivai?
+    - Rivai punya buku favorit?
+    - Buku favorit Rivai?
+    - apa yang menjadi buku favorit Rivai?
+    - Rivai punya buku favorit?
+    - Buku favorit Rivai apa?
+    - Rivai punya buku kesukaan?
+    - Apakah buku kesukaan Rivai?
+    - Apakah buku favorit Rivai?
+    - Buku favorit Rivai
+    - Buku kesukaan Rivai
+
+- intent: ask_favorite_game
+  examples: |
+    - Game apa yang Rivai sukai?
+    - Rivai suka main game apa?
+    - Apa game kesukaan Rivai?
+    - Game favorit Rivai
+    - Game Kesukaan Rivai
+    - Rivai biasa main game apa
+    - Rivai punya game favorit?
+    - Apa yang menjadi game favorit Rivai?
+
+- intent: ask_job
+  examples: |
+    - Rivai punya pekerjaan?
+    - Apa pekerjaan Rivai?
+    - Rivai mempunyai pekerjaan apa?
+    - Rivai bekerja sebagai apa?
+    - Apa yang menjadi pekerjaan Rivai?
+    - Pekerjaan Rivai
+
+- intent: ask_career
+  examples: |
+    - Apa cita-cita Rivai?
+    - Apa yang Rivai ingin capai di masa depan?
+    - Ceritakan tentang ambisi Rivai
+    - Apa Rivai pe cita-cita
+    - Cita-cita Rivai
+
+- intent: ask_achivement
+  examples: |
+    - Prestasi apa yang telah Rivai dapatkan?
+    - Apa yang menjadi prestasi Rivai?
+    - Rivai punya prestasi?
+    - Prestasi Rivai apa?
+    - Sebutkan Prestasi Rivai
+    - Prestasi Rivai
+
+- intent: ask_daily_routine
+  examples: |
+    - Kegiatan apa yang dilakukan Rivai setiap harinya
+    - Apa yang menjadi kegiatan Rivai setiap hari
+    - Setiap hari Rivai melakukan kegiatan apa
+    - Apa kegiatan harian Rivai
+
+- intent: ask_personality
+  examples: |
+    - Karakter Rivai seperti apa?
+    - Rivai orangnya seperti apa?
+    - Sebutkan karakter Rivai
+    - Sifat Rivai
+    - Rivai Sifatnya seperti apa?
+    - Sebutkan Kepribadian Rivai
+    - Kepribadian Rivai
+    - Rivai punya pribadi seperti apa
+    - Apa yang menjadi Kepribadian Rivai?
+    - Seperti apa Rivai orangnya
+    - Rivai orangnya kayak gimana
+
+- intent: ask_relationship
+  examples: |
+    - Sebutkan hubungan Rivai
+    - Apa status hubungan Rivai sekarang?
+    - Apa Rivai punya pacar?
+    - Pacar Rivai sekarang siapa?
+    - Apakah Rivai punya pacar?
+    - Sapa Rivai pe cewe
+    - Rivai so ada cewe?
+    - Depe cewe sapa?
+    - So ada cewe dia?
+    - Apakah Rivai punya pacar?
+    - Pacar Rivai siapa?
+    - Apa Rivai Jomblo?
+    - Rivai Jomblo sekarang?
+    - Sebutkan pacar Rivai
+#-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+#handling error-------------------------------------------------------------------------------
+- intent: out_of_scope
+  examples: |
+    - weorweorworwekwoerw
+    - ewyegwyegw
+    - sebutikannn kucingggg
+    - anjinggg
+    - hayuolo
