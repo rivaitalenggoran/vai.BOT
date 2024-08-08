@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/vai.BOT.iml" filepath="$PROJECT_DIR$/.idea/vai.BOT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vai.Bot.iml" filepath="$PROJECT_DIR$/.idea/vai.Bot.iml" />
     </modules>
   </component>
 </project>
