@@ -62,6 +62,13 @@ nlu:
     - Jelaskan biografi Rivai
     - Sebutkan biografi Rivai
     - Biografi Rivai
+    - Rivai lahir dimana
+    - tempat lahir rivai
+    - rivai tinggal dimana
+    - tempat tinggal rivai
+    - kelahiran rivai
+    - dia lahir 
+    - lahir dimana
 
 - intent: ask_education_all
   examples: |
