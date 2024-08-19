@@ -11,6 +11,7 @@ vai.BOT adalah chatbot sederhana yang dirancang untuk menjawab pertanyaan seputa
 - Python
 - Natural Language Processing (NLP)
 - Modul `os` dan `sys` untuk mengelola input dan output terminal
+- Framework Rasa
 
 ## Instalasi
 
