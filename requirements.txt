@@ -1,0 +1,6 @@
+# Versi Python minimum yang diperlukan
+python_version >= 3.10
+
+# Rasa Core dan Rasa NLU
+rasa==3.5.0
+
