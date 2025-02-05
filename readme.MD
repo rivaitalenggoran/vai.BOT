@@ -9,7 +9,7 @@ vai.BOT adalah chatbot sederhana yang dirancang untuk menjawab pertanyaan seputa
 
 ## Teknologi yang Digunakan
 - Python 3.10.0
-- Framework Rasa
+- Framework Rasa 3.1
 
 
 ## Instalasi
