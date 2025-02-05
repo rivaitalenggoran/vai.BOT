@@ -70,7 +70,7 @@ nlu:
     - dia lahir 
     - lahir dimana
 
-- intent: ask_education_all
+- intent: ask_education
   examples: |
     - Di mana Rivai bersekolah?
     - Apa latar belakang pendidikan Rivai?

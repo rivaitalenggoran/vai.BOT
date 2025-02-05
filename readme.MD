@@ -8,10 +8,9 @@ vai.BOT adalah chatbot sederhana yang dirancang untuk menjawab pertanyaan seputa
 - Menyediakan detail mengenai latar belakang pendidikan dan proyek yang sedang Rivai kerjakan
 
 ## Teknologi yang Digunakan
-- Python
-- Natural Language Processing (NLP)
-- Modul `os` dan `sys` untuk mengelola input dan output terminal
+- Python 3.10.0
 - Framework Rasa
+
 
 ## Instalasi
 
@@ -21,9 +20,12 @@ vai.BOT adalah chatbot sederhana yang dirancang untuk menjawab pertanyaan seputa
     cd vai.BOT
     ```
 
-2. **Buat Virtual Environment (Opsional, Tapi Direkomendasikan)**
+2. a. **Buat Virtual Environment (Direkomendasikan)**
     ```bash
     python -m venv venv
+   ```
+   b. **Aktifkan Enviroment**
+    ```bash
     source venv/bin/activate  # Linux / MacOS
     .\venv\Scripts\activate   # Windows
     ```
@@ -56,7 +58,5 @@ vai.BOT adalah chatbot sederhana yang dirancang untuk menjawab pertanyaan seputa
 ## Catatan
 Saat ini vai.BOT hanya dapat diakses melalui terminal, dan pengembangannya masih dalam tahap awal. Fitur deployment ke cloud atau platform lainnya masih dalam tahap rencana. Proyek ini juga memiliki kelemahan dalam hal environment yang belum optimal untuk deployment skala besar.
 
-## Kontribusi
-Jika Anda ingin berkontribusi, silakan buat pull request atau ajukan masalah di repository ini. Semua kontribusi sangat dihargai!
 
 
